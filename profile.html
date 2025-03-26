@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профил на потребителя - Travel Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f0f4f8, #ffffff);
+        }
+
+        nav {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand span {
+            font-weight: bold;
+            color: black;
+        }
+
+        .container h2 {
+            color: black;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        form .btn-primary {
+            background: #0d6efd;
+            border: none;
+            transition: background 0.3s ease;
+        }
+
+        form .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #f8f9fa;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.jpg" alt="Travel Site Logo" style="height: 40px; width: auto; margin-right: 10px;">
+                <span>Пътувай с нас</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="change_name.html" class="nav-link">
+                            <i class="fas fa-user-edit"></i> Промяна на профила
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="social_networks.html">
+                            <i class="fas fa-users"></i> Социални мрежи
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-form.html">
+                            <i class="fas fa-envelope"></i> Връзка с нас
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5 flex-grow-1">
+        <div class="shadow-sm p-5 bg-white rounded">
+            <h2 class="text-center">Вход</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="form-label">Потребителско име</label>
+                    <input type="text" class="form-control shadow-sm" id="username" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label">Имейл</label>
+                    <input type="email" class="form-control shadow-sm" id="email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Парола</label>
+                    <input type="password" class="form-control shadow-sm" id="password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Запази</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center py-3 mt-auto">
+        <p>© 2023 Пътувай с нас. Всички права запазени.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

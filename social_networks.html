@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Социални мрежи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f8f9fa, #ffffff);
+        }
+
+        nav {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand span {
+            font-weight: bold;
+            color: black;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        footer {
+            background: #f8f9fa;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: #6c757d;
+        }
+
+        iframe {
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.jpg" alt="Travel Site Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            <span>Пътувай с нас</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fas fa-user"></i> Профил
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-form.html">
+                        <i class="fas fa-envelope"></i> Връзка с нас
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> Държави
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Paris.html"><i class="fas fa-landmark"></i> Париж</a></li>
+                        <li><a class="dropdown-item" href="Tokyo.html"><i class="fas fa-city"></i> Токио</a></li>
+                        <li><a class="dropdown-item" href="New_York.html"><i class="fas fa-building"></i> Ню Йорк</a></li>
+                        <li><a class="dropdown-item" href="Bankok.html"><i class="fas fa-umbrella-beach"></i> Банкок</a></li>
+                        <li><a class="dropdown-item" href="London.html"><i class="fas fa-bus"></i> Лондон</a></li>
+                        <li><a class="dropdown-item" href="Dubai.html"><i class="fas fa-city"></i> Дубай</a></li>
+                        <li><a class="dropdown-item" href="Sidney.html"><i class="fas fa-water"></i> Сидни</a></li>
+                        <li><a class="dropdown-item" href="Cape_town.html"><i class="fas fa-sun"></i> Кейптаун</a></li>
+                        <li><a class="dropdown-item" href="Barcelona.html"><i class="fas fa-church"></i> Барселона</a></li>
+                        <li><a class="dropdown-item" href="Istanbul.html"><i class="fas fa-mosque"></i> Истанбул</a></li>
+                        <li><a class="dropdown-item" href="Bali.html"><i class="fas fa-leaf"></i> Бали</a></li>
+                        <li><a class="dropdown-item" href="Rome.html"><i class="fas fa-monument"></i> Рим</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5 flex-grow-1">
+    <h1 class="text-center mb-5 fw-bold text-primary">Последвайте ни, за да не пропуснете някоя интерсна оферта!</h1>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Facebook</h3>
+                    <p class="card-text">Присъединете се към нашата Facebook общност.</p>
+                    <a href="https://www.facebook.com/ElenyTravelAgency/" target="_blank" class="bi bi-facebook fs-1 text-primary"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Twitter</h3>
+                    <p class="card-text">Следвайте ни за актуални новини.</p>
+                    <a href="https://www.twitter.com/ElenyTravelAgency" target="_blank" class="bi bi-twitter fs-1 text-primary"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">LinkedIn</h3>
+                    <p class="card-text">Свържете се професионално с нас.</p>
+                    <a href="https://www.linkedin.com/ElenyTravelAgency" target="_blank" class="bi bi-linkedin fs-1 text-primary"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g-4 mt-4">
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Instagram</h3>
+                    <p class="card-text">Открийте нашите снимки и истории.</p>
+                    <a href="https://www.instagram.com/ElenyTravelAgency" target="_blank" class="bi bi-instagram fs-1 text-danger"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">GitHub</h3>
+                    <p class="card-text">Вижте нашите проекти.</p>
+                    <a href="https://www.github.com/ElenyTravelAgency" target="_blank" class="bi bi-github fs-1 text-dark"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Имейл</h3>
+                    <p class="card-text">Свържете се с нас по имейл.</p>
+                    <a href="mailto:eleny@mail.bg" class="bi bi-envelope fs-1 text-secondary"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Посетете ни!</h2>
+        <p class="text-center">ул. „Михаил Колони“ 13, 9000 Варна</p>
+        <p class="text-center d-none d-md-block">Нашето местоположение е показано на картата по-долу.</p>
+        <div class="ratio ratio-16x9 d-none d-md-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.0178295150217!2d27.922539076495394!3d43.20235897129579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a453f7177e76c9%3A0x2b6314a85819b9fa!2sul.%20%22Mihail%20Koloni%22%2013%2C%209000%20Varna%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1700043024000!5m2!1sen!2sbg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center mt-auto py-3">
+    <p>© 2023 Пътувай с нас. Всички права запазени.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

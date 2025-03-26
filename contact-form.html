@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактна форма</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            background-image: url('photo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #007BFF;
+        }
+        .navbar-nav .nav-link {
+            color: #007BFF;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
+        }
+        .navbar-nav {
+            margin-left: auto; 
+        }
+        .content {
+            flex: 1; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            border: none;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0056b3, #003580);
+        }
+        footer {
+            background: #f8f9fa;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: #555;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>    
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.jpg" alt="Travel Site Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            <span>Пътувай с нас</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fas fa-user"></i> Профил
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="social_networks.html">
+                        <i class="fas fa-users"></i> Социални мрежи
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-form.html">
+                        <i class="fas fa-envelope"></i> Връзка с нас
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> Държави
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Paris.html"><i class="fas fa-landmark"></i> Париж</a></li>
+                        <li><a class="dropdown-item" href="Tokyo.html"><i class="fas fa-city"></i> Токио</a></li>
+                        <li><a class="dropdown-item" href="New_York.html"><i class="fas fa-building"></i> Ню Йорк</a></li>
+                        <li><a class="dropdown-item" href="Bankok.html"><i class="fas fa-umbrella-beach"></i> Банкок</a></li>
+                        <li><a class="dropdown-item" href="London.html"><i class="fas fa-bus"></i> Лондон</a></li>
+                        <li><a class="dropdown-item" href="Sidney.html"><i class="fas fa-water"></i> Сидни</a></li>
+                        <li><a class="dropdown-item" href="Cape_town.html"><i class="fas fa-sun"></i> Кейптаун</a></li>
+                        <li><a class="dropdown-item" href="Barcelona.html"><i class="fas fa-church"></i> Барселона</a></li>
+                        <li><a class="dropdown-item" href="Istanbul.html"><i class="fas fa-mosque"></i> Истанбул</a></li>
+                        <li><a class="dropdown-item" href="Bali.html"><i class="fas fa-leaf"></i> Бали</a></li>
+                        <li><a class="dropdown-item" href="Rome.html"><i class="fas fa-monument"></i> Рим</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="content">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-5">
+                  <div class="card mt-5">
+                      <div class="card-body">
+                          <h2 class="text-center mb-4">Свържете се с нас</h2>
+                          <form>
+                              <div class="form-group">
+                                  <label for="name">Име:</label>
+                                  <input type="text" class="form-control" id="name" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Имейл:</label>
+                                  <input type="email" class="form-control" id="email" name="email" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="message">Съобщение:</label>
+                                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                              </div>
+                              <div class="form-group">
+                                  <button type="submit" class="btn btn-primary btn-block">Изпрати</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer>
+      <p>© 2023 Пътувай с нас. Всички права запазени.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

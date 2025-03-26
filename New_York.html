@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Site - Детайли за дестинацията</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.jpg" alt="Travel Site Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            <span>Пътувай с нас</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fas fa-user"></i> Профил
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="social_networks.html">
+                        <i class="fas fa-users"></i> Социални мрежи
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe"></i> Държави
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Paris.html"><i class="fas fa-landmark"></i> Париж</a></li>
+                            <li><a class="dropdown-item" href="Tokyo.html"><i class="fas fa-city"></i> Токио</a></li>
+                            <li><a class="dropdown-item" href="Bankok.html"><i class="fas fa-umbrella-beach"></i> Банкок</a></li>
+                            <li><a class="dropdown-item" href="London.html"><i class="fas fa-bus"></i> Лондон</a></li>
+                            <li><a class="dropdown-item" href="Dubai.html"><i class="fas fa-city"></i> Дубай</a></li>
+                            <li><a class="dropdown-item" href="Sidney.html"><i class="fas fa-water"></i> Сидни</a></li>
+                            <li><a class="dropdown-item" href="Cape_town.html"><i class="fas fa-sun"></i> Кейптаун</a></li>
+                            <li><a class="dropdown-item" href="Barcelona.html"><i class="fas fa-church"></i> Барселона</a></li>
+                            <li><a class="dropdown-item" href="Istanbul.html"><i class="fas fa-mosque"></i> Истанбул</a></li>
+                            <li><a class="dropdown-item" href="Bali.html"><i class="fas fa-leaf"></i> Бали</a></li>
+                            <li><a class="dropdown-item" href="Rome.html"><i class="fas fa-monument"></i> Рим</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 content-wrapper">
+        <div id="destination-details" class="text-center p-5 bg-light rounded shadow">
+            <h1 class="display-4 mb-4" id="destination-title">Ню Йорк, САЩ</h1>
+            <p class="lead" id="destination-description">Ню Йорк, най-големият и най-важен град в САЩ, е център на културата, бизнеса и развлеченията. Градът е известен със своето разнообразие, със забележителности като Статуята на свободата, Централния парк и Уолстрийт, както и с уникалния си дух на динамичност и иновации.</p>
+
+            <h3 class="mt-4">Основни забележителности</h3>
+            <ul class="list-unstyled" id="destination-sights">
+                <li><strong>Статуята на Свободата:</strong> Символ на свободата и демокрацията, този емблематичен монумент може да бъде посетен с ферибот от Манхатън.</li>
+                <li><strong>Централен парк:</strong> Огромен зелен парк в сърцето на Манхатън, който предлага разнообразие от дейности на открито, от разходки до пикници и йога.</li>
+                <li><strong>Емпайър Стейт Билдинг:</strong> Един от най-забележителните небостъргачи в света, с панорамна гледка към целия град от върха му.</li>
+            </ul>
+
+            <h3 class="mt-4">Предложени дейности</h3>
+            <ul class="list-unstyled" id="destination-activities">
+                <li>Разходка по улицата „Пета Авеню“, известна с луксозните магазини и важни исторически сгради.</li>
+                <li>Посещение на Музея на съвременното изкуство (MoMA) за културни преживявания.</li>
+                <li>Пътуване с ферибот до остров Стейтън за невероятни гледки към града и Статуята на Свободата.</li>
+            </ul>
+
+            <h3 class="mt-4">Пътуване и полезни съвети</h3>
+            <p class="text-muted" id="destination-travel-tips">Ню Йорк има обширна система от метро и автобуси, които ще ви отведат лесно до всяка точка на града. Използването на карта MetroCard е препоръчително, за да избегнете опашки и да спестите време. Бъдете внимателни в натоварените райони като Таймс Скуеър и по време на пиковите часове.</p>
+
+            <h3 class="mt-4">Най-добро време за посещение</h3>
+            <p class="text-muted" id="destination-best-time">Най-доброто време за посещение на Ню Йорк е през пролетта (април-юни) и есента (септември-ноември), когато времето е приятно и градът е най-живописен, със зеленина през пролетта и есенни цветове през есента.</p>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="New_York.jpg" class="d-block w-100" alt="Ню Йорк 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="new_york2.jpeg" class="d-block w-100" alt="Ню Йорк 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="new_york3.jpg" class="d-block w-100" alt="Ню Йорк 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center mt-auto py-3">
+        <p>© 2023 Пътувай с нас. Всички права запазени.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        const carouselElement = document.getElementById('carouselExampleSlidesOnly');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 10000
+        });
+    </script>
+</body>
+</html>
